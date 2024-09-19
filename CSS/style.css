@@ -1,0 +1,80 @@
+/* Var Color Base Define For All Elements */
+:root {
+    --MainColor: #ff0000;
+    --SecendColor: #a10000;
+    --GrayColor: #4a4a4a;
+    --BlackColor: #1f1e1e;
+    --LightGrayColor: #c4c4c4;
+    --WhiteColor: #ffffff;
+    --ff-primary: "WazirFont" , sans-serif;
+  }
+body {
+    text-align: right;
+    font-size: 1rem;
+    font-family: var(--ff-primary);
+}
+a {
+    text-decoration: none;
+}
+/* Tarif Font Face */
+@font-face {
+    font-family: "vazirfont";
+    src: url("../assets/fonts/Vazir-Medium-FD.woff") format("woff");
+      font-display: swap;
+  }
+  
+  /* Moarefi Font Face Be Body */
+  * {
+    font-family: "vazirfont";
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+  
+  .header {
+    height: 100vh;
+    background: url(../assets/images/header.jpeg) center/cover no-repeat fixed;
+    position: relative;
+}
+
+  .banner {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-20%, -50%);
+    text-align: center;
+}
+
+.banner h1 {
+    color: var(--MainColor);
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px var(--BlackColor);
+}
+
+.banner h2 {
+    color: var(--WhiteColor);
+    margin-bottom: 3rem;
+    font-weight: 100;
+}
+
+.btn-banner {
+    font-size: 1.25rem;
+    outline: 0.125rem solid var(--MainColor);
+    outline-offset: 0.25rem;
+    padding: 0.75rem 1.25rem;
+}
